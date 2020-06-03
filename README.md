@@ -1,1 +1,1 @@
-# React.js + Java Spring MVC application
+# Simple Spring Boot-based project
