@@ -29,19 +29,19 @@ public class CorradowaverApplication {
     SpringApplication.run(CorradowaverApplication.class, args);
   }
 
-//  @Bean
-//  public CommandLineRunner test(EmployeeService employeeService, DepartmentService departmentService, ProjectService projectService) {
-//    return args -> {
-//
-//      departmentService.addDepartment(new Department("lmao"));
-//
-//      var department = departmentService.getDepartmentByName("lmao");
-//      employeeService.addEmployee(new Employee("Georgii", "Corradowaver", "DB",
-//          "Admin", 3000,
-//          department,
-//          "admin",
-//          pwdEncoder.encode("admin"),
-//         ApplicationUserRole.ADMIN));
-//    };
-//  }
+  @Bean
+  public CommandLineRunner test(EmployeeService employeeService, DepartmentService departmentService, ProjectService projectService) {
+    return args -> {
+
+      departmentService.addDepartment(new Department("lmao"));
+
+      var department = departmentService.getDepartmentByName("lmao");
+      employeeService.addEmployee(new Employee("Georgii", "Corradowaver", "Heroku",
+          "Admin", 3000,
+          department,
+          "admin",
+          pwdEncoder.encode("admin"),
+         ApplicationUserRole.ADMIN));
+    };
+  }
 }
