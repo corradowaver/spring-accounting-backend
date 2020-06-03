@@ -1,7 +1,7 @@
 package com.corradowaver.accounting.helpers;
 
 public class ClientAddress {
-  public static final String CLIENT_HOST = "http://25.33.185.24:3000";
+  public static final String CLIENT_HOST = "https://react-accounting-client.herokuapp.com";
 
   private ClientAddress() {
 
