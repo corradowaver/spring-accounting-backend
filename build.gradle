@@ -6,7 +6,8 @@ plugins {
 
 group = 'com.corradowaver'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '14'
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
 
 repositories {
     mavenCentral()
